@@ -18,6 +18,6 @@ module.exports = class Calculator {
      return Math.factorial(a)
     }
     potential(a){
-      return Math.potential(a)
+      return Math.pow(a,b)
     }
 }
