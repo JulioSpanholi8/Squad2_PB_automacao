@@ -31,7 +31,7 @@ module.exports = class Calculator {
         }
         return rs;
     }
-    potential(a){
+    potential(a,b){
       return Math.pow(a,b)
     }
 }
