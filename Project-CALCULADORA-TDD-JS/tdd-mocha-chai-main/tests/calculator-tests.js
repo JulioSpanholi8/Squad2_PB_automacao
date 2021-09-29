@@ -28,16 +28,16 @@ describe('The Calculator', () => {
       expect(calculator.div(6, 3)).to.be.a("number");
 
     }); 
+    
+    it('Deve dividir um numero inteiro por uma fração', () => {
+      expect(calculator.div(90, 1/3)).to.equal(270);
+    })
 
     it('Deve verificar o resultado da divisao', () => { 
       expect(calculator.div(10, 2)).to.not.equal(4);
       expect(calculator.div(10, 2)).is.not.string;
     });
 
-    it('Deve verificar o fatorial', () => {
-      expect(calculator.fat(5)).to.equal(120);
-      expect(calculator.fat(3)).to.not.equal(7);
-    })
 
     it('Deve ser feito a raiz quadrada de um numero inteiro e retornar uma variavel number', () => {
       expect(calculator.sqrt(49)).to.equal(7);
@@ -47,6 +47,11 @@ describe('The Calculator', () => {
     it('Deve ser feito a raiz quadrada de um numero inteiro negativo e nao deve ser possivel dar um resultado', () => {
       expect(calculator.sqrt(-49)).to.be.NaN;
     });
+
+    it('Deve verificar o fatorial', () => {
+      expect(calculator.fat(5)).to.equal(120);
+      expect(calculator.fat(3)).to.not.equal(7);
+    })
 
     it('Deve ser feito o fatorial de um numero inteiro e retornar uma variavel number', () => {
       expect(calculator.fat(5)).to.equal(120);
@@ -83,8 +88,6 @@ describe('The Calculator', () => {
       expect(calculator.potential(2, -10)).to.be.a("number");
     });
 
-    it('Deve dividir um numero inteiro por uma fração', () => {
-      expect(calculator.div(90, 1/3)).to.equal(270);
-    })
+   
     
 });
