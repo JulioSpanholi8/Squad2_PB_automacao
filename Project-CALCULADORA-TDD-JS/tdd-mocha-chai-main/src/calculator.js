@@ -17,5 +17,7 @@ module.exports = class Calculator {
     fat(a){
      return Math.factorial(a)
     }
-    
+    potential(a){
+      return Math.potential(a)
+    }
 }
