@@ -16,7 +16,7 @@ module.exports = class Calculator {
     }
     fat(a){
         if (isNaN(a)) {
-            return 'Não existe a de um texto';
+            return 'Não existe fatorial de um texto';
         }
         if (!Number.isInteger(a) || a < 0) {
             return 'Não existe fatorial de de 0 e nao natural';
