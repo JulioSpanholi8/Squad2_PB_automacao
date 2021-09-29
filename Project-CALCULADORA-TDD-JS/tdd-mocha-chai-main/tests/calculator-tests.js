@@ -26,6 +26,12 @@ describe('The Calculator', () => {
     it('Deve dividir dois numeros inteiros e retornar uma variavel number', () => {
       expect(calculator.div(6, 3)).to.equal(2);
       expect(calculator.div(6, 3)).to.be.a("number");
+
+    }); 
+
+    it('Deve verificar o resultado da divisao', () => { 
+      expect(calculator.div(10, 2)).to.not.equal(4);
+      expect(calculator.div(10, 2)).is.not.string;
     });
 
     it('Deve verificar o fatorial', () => {
@@ -48,10 +54,6 @@ describe('The Calculator', () => {
 
     });
 
-    it('Deve verificar o resultado', () => { 
-      expect(calculator.div(10, 2)).to.not.equal(4);
-      expect(calculator.sqrt(49)).is.not.string;
-    });
 
     it('Deve ser feito o fatorial de 0 e 1 e retornar um', () => {
       expect(calculator.fat(0)).to.equal(1);
