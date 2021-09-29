@@ -15,7 +15,21 @@ module.exports = class Calculator {
       return Math.sqrt(a)
     }
     fat(a){
-     return Math.factorial(a)
+        if (isNaN(a)) {
+            return 'Não existe a de um texto';
+        }
+        if (!Number.isInteger(a) || a < 0) {
+            return 'Não existe fatorial de de 0 e nao natural';
+        }
+        if (a == 0 || a == 1) {
+            return 1;
+        }
+        var rs = a;
+        var aux = a - 1;
+        for (var i = aux; i > 1; i--) {
+            rs *= i;
+        }
+        return rs;
     }
     potential(a){
       return Math.pow(a,b)
