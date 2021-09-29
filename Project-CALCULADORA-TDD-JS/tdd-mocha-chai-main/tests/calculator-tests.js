@@ -28,7 +28,7 @@ describe('The Calculator', () => {
       expect(calculator.div(6, 3)).to.be.a("number");
 
     }); 
-    
+
     it('Deve dividir um numero inteiro por uma fração', () => {
       expect(calculator.div(90, 1/3)).to.equal(270);
     })
@@ -55,7 +55,7 @@ describe('The Calculator', () => {
 
     it('Deve ser feito o fatorial de um numero inteiro e retornar uma variavel number', () => {
       expect(calculator.fat(5)).to.equal(120);
-      expect(calculator.fat(49)).to.be.a("number");
+      expect(calculator.fat(5)).to.be.a("number");
 
     });
 
@@ -67,7 +67,7 @@ describe('The Calculator', () => {
     });
 
     it('Deve ser feito o fatorial de um numero negativo e retornar erro em uma variavel string', () => {
-      expect(calculator.fat(-5)).to.equal("Não existe fatorial de de 0 e nao natural");
+      expect(calculator.fat(-5)).to.equal("Não existe fatorial de numero nao natural");
       expect(calculator.fat(-5)).to.be.a('string');
  
     });
